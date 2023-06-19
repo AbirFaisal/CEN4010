@@ -1,2 +1,10 @@
-# CEN4010
-CEN4010 Group 6
+# CEN4010  Group Project
+Course: Principles of Software Engineering
+Professor: Shihong Huang
+
+Project Members:
+
+
+Description:
+
+
