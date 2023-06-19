@@ -1,11 +1,13 @@
 # CEN4010  Group Project
 Course: Principles of Software Engineering
 
-Professor: Shihong Huang
+Professor: Dr. Shihong Huang
 
 Project Members:
+Abir Faisal
+Isaiah Cruz 
+Gabriel Giani
+Brandon Hyppolite 
+Kevin Pham
 
-
-Description:
-
-
+Description: IOT Smart Thermostat
