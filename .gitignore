@@ -1,5 +1,13 @@
-
+*.DS_Store*
+*/.DS_Store
+*.bkp
+*.dtmp
+*.log
 .DS_Store
-.$Hardware_Diagram.drawio.bkp
-.DS_Store
-.$Hardware_Diagram.drawio.dtmp
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Firmware/.DS_Store
