@@ -1,0 +1,114 @@
+/*icon*/
+
+.icon{
+    cursor: pointer;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index:100; 
+}
+
+/*font style*/
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#slider-range{
+    background-color: rgba(187,145,19,0.2);
+    background-image: none;
+}
+.rs-control .rs-range-color {
+    background-color: #54BBE0;
+}
+.rs-control .rs-path-color {
+    background-color: white;
+}
+.rs-control .rs-handle {
+    background-color: #838383;
+}
+.rs-control .rs-bg-color {
+    background-color: #f5f5f5;
+}
+.ui-slider {
+ background: #f5f5f5;
+}
+
+/* The sidebar menu */
+
+.sidenav {
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 100px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #ffffff;
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Style page content */
+
+.main {
+    margin-left: 160px;
+    /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+/*Sidenav icon color*/
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
