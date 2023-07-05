@@ -99,6 +99,16 @@
         svgMode: true
         
       });
+      $("#plus").click(function () {
+      $("#container div:eq(" + num + ")").slideUp(450);
+      num = (num + 1) % 4;
+      $("#container div:eq(" + num + ")").fadeIn(450);
+      });
+      $("#minus").click(function () {
+      $("#container div:eq(" + num + ")").slideUp(450);
+      num = 4;
+      $("#container div:eq(" + num + ")").fadeIn(450);
+      });
       // This change the background color of the right side of the page with jquery in it
       $("body").on({
         mouseenter: function () {
@@ -116,10 +126,10 @@
   
   <div class="icon" viewBox="0 0 500 500">  
     <!--Minus Icon-->
-    <i class='bx bx-minus-circle'></i>
+    <button id="minus" class='bx bx-minus-circle'></button>
 
     <!--Add Icon-->
-    <i class='bx bx-plus-circle'></i>
+    <button id="plus" class='bx bx-plus-circle'></button>
   </div>  
     <div class="Eco-mode">
       <!--Leaf(Eco-mode) Icon-->
