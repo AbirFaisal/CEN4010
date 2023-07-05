@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+
+<!--Required files to jquery range slider-->
+<link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<!--bootstrap auto starter file-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+<style>
+    .roundslider {
+        display: inline-block;
+    }
+</style>
+
+
+
+
+<body>
+
+
+    <form>
+
+        <div class="mb-3">
+            <label for="Wireless_AP" class="form-label">Wireless AP</label>
+            <input type="wirelessap" class="form-control" id="Wireless_AP">
+        </div>
+
+        <div class="mb-3">
+            <label for="SecurityType" class="form-label">Security</label>
+            <select class="form-select" id="SecurityType">
+              <option value="1">None</option>
+              <option value="3">WEP</option>
+              <option value="2">WPA</option>
+              <option value="3">WPA2</option>
+              <option value="3">WPA3</option>
+            </select>
+          </div>
+
+        <div class="mb-3">
+            <label for="Password" class="form-label">Wireless Password</label>
+            <input type="password" class="form-control" id="Password">
+        </div>
+
+
+        <div class="mb-3">
+            <label for="Password" class="form-label">System Password</label>
+            <input type="password" class="form-control" id="Password">
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+    </form>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
