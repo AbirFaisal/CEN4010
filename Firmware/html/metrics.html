@@ -65,59 +65,21 @@
   </nav>
 
 
+  <h1>Metrics Page</h1>
+  Gantt chart
 
 
-
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3 text-center">
-      <h1>Thermostat</h1>
-      <div id="slider" class="roundslider"></div>
-    </div>
-  </div>
-
-
-  <!--The jquery range slider plugin -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
-
-  <!--The jquery range slider -->
-  <div class="slider-range">
+  <div>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="NEW YORK" data-label_2="WEATHER" data-theme="original" >NEW YORK WEATHER</a>
     <script>
-      $("#slider").roundSlider({
-        sliderType: "min-range",
-        handleShape: "round",
-        width: 22,
-        radius: 100,
-        value: 75,
-        startAngle: 315,
-        lineCap: "round",
-        circleShape: "pie",
-        min: "60",
-        max: "90"
-
-      });
-      // This change the background color of the right side of the page with jquery in it
-      $("body").on({
-        mouseenter: function () {
-          $(this).css("background-color", "#f5f5f5");
-        },
-      });
-
-
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     </script>
+
+
   </div>
-  <div class="icon" z-index:100; position: fixed;>
 
-    <!--Minus Icon-->
-    <i class='bx bx-minus-circle'></i>
-    <!--Add Icon-->
-    <i class='bx bx-plus-circle'></i>
 
-    </icon>
-    <a href="#">
-      <!--Leaf(Eco-mode) Icon-->
-      <i class='bx bxs-leaf' style='color:#07d200'></i>
-    </a>
+
 
 
 
