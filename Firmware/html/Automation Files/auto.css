@@ -14,6 +14,11 @@ h3{
     font-size: 35px;
     
 }
+h4{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 2%;
+}
 i{
     justify-content: space-between;
     display: block;
@@ -26,4 +31,7 @@ i{
     
     
 }
-
+input{
+    text-align: center;
+    margin-left: 44%;
+}
