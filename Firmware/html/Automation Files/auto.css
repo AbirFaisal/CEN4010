@@ -25,13 +25,26 @@ i{
     font-size:xxx-large;
     position:relative;
     
-
-    margin-left: 15%;
     
     
-    
-}
+} 
+/*Select Time and Date */
 input{
     text-align: center;
     margin-left: 44%;
 }
+/* Icon buttons */
+.btn {
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    margin-left: 21.5%;
+  }
+  /* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+
+  }
