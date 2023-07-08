@@ -1,45 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-</head>
-
-<!--Required files for jquery range slider-->
-<link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-<!--bootstrap auto starter file-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-  integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-
-<style>
-  .roundslider {
-    display: inline-block;
-  }
-
-  .rs-handle {
-    cursor: pointer;
-  }
-
-  .rs-handle:hover {
-    cursor: pointer;
-  }
-</style>
-
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
+  <!-- Css file-->
+  <link href="slider files/thermo.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-</head>
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
 
 
 <!--Required files to jquery range slider-->
@@ -56,6 +28,7 @@
     display: inline-block;
   }
 </style>
+
 
 
 
@@ -86,22 +59,22 @@
             <a class="nav-link" href="automations.html">Automation</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="metrics.html">Metrics</a>
-          </li>
-
         </ul>
       </div>
     </div>
   </nav>
 
+
+
+
+
   <div class="row">
     <div class="col-md-6 col-md-offset-3 text-center">
       <h1>Thermostat</h1>
       <div id="slider" class="roundslider"></div>
-
     </div>
   </div>
+
 
   <!--The jquery range slider plugin -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
@@ -109,7 +82,8 @@
 
   <!--The jquery range slider -->
   <div class="slider-range">
-    <script>
+    <div >
+    <script id=".rs-tooltip-text">
       $("#slider").roundSlider({
         sliderType: "min-range",
         handleShape: "round",
@@ -121,31 +95,57 @@
         circleShape: "pie",
         min: "60",
         max: "90",
+        
+        svgMode: true
+        
+      });
+      $("#plus").click(function () {
+      $("#container div:eq(" + num + ")").slideUp(450);
+      num = (num + 1) % 4;
+      $("#container div:eq(" + num + ")").fadeIn(450);
+      });
+      $("#minus").click(function () {
+      $("#container div:eq(" + num + ")").slideUp(450);
+      num = 4;
+      $("#container div:eq(" + num + ")").fadeIn(450);
       });
       // This change the background color of the right side of the page with jquery in it
       $("body").on({
         mouseenter: function () {
           $(this).css("background-color", "#f5f5f5");
+          
         },
       });
+      
+
+
     </script>
   </div>
-
-  <div class="icon" style="z-index: 100; position: fixed">
-    <!--Minus Icon-->
-    <i class="bx bx-minus-circle"></i>
-    <!--Add Icon-->
-    <i class="bx bx-plus-circle"></i>
   </div>
+    
+  
+  <div class="icon" viewBox="0 0 500 500">  
+    <!--Minus Icon-->
+    <button id="minus" class='bx bx-minus-circle'></button>
 
-  <a href="#">
-    <!--Leaf(Eco-mode) Icon-->
-    <i class="bx bxs-leaf" style="color: #07d200"></i>
-  </a>
+    <!--Add Icon-->
+    <button id="plus" class='bx bx-plus-circle'></button>
+  </div>  
+    <div class="Eco-mode">
+      <!--Leaf(Eco-mode) Icon-->
+    <i class='bx bxs-leaf' style='color:#07d200'></i>
+    
+  </div>  
+  
+    
+    
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
 </body>
+
+</html>
 
 </html>
