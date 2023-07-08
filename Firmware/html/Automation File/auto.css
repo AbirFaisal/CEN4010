@@ -1,0 +1,57 @@
+body{
+    background-color: #f5f5f5;
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    justify-content: space-evenly;
+}
+
+    justify-content:space-evenly;
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+    padding-right: 2%;
+
+    
+}
+h4{
+    text-align: center;
+    font-size: 40px;
+    
+}
+i{
+    justify-content: space-between;
+    display: block;
+    font-size:xxx-large;
+    position:relative;
+    
+} 
+/*Select Time and Date */
+input{
+    text-align: center;
+
+}
+/* Icon buttons */
+.btn {
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    justify-content: space-evenly;
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    margin-right:1.5%;
+    margin-left:1.5%;
+    display: inline-block;
+  }
+  /* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+    
+  }
+  /* aligns both buttons and time */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
