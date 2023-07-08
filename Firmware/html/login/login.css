@@ -69,3 +69,7 @@ form {
       width: 100%;
     }
   }
+  /*icon size*/
+  i{
+    font-size: xxx-large;
+  }
