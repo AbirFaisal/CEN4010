@@ -6,7 +6,7 @@ window.changeTooltip = function(e) {
     return "<div>" + speed + "<div>" + "<b>" + val + "<b>"
   }
   
-  $("#inner-slider").roundSlider({
+  $("#slider").roundSlider({
     step: "0.1",
     min: "60",
     max: "90",
