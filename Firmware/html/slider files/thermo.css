@@ -59,6 +59,19 @@ h1 {
     font-size: 25px;
     
   }
+  /* Button  */
+  #add,
+  #sub {
+    position: absolute;
+    top: 100%;
+    margin-top: -60px;
+  }
+  #add {
+    right: 65px;
+  }
+  #sub {
+    left: 65px;
+  }
 
 
 /* The sidebar menu */
@@ -138,3 +151,5 @@ a:link {
     background-color: transparent;
     text-decoration: underline;
   }
+
+  
