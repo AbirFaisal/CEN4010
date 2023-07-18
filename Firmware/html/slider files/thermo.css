@@ -1,13 +1,32 @@
 /*icon*/
-
+body{
+    font-size: larger;
+}
 .icon{
     cursor: pointer;
-    width: 50%;
     display: flex;
+    width: 10%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index:100; 
+    left: auto; 
+    right: 56.25em;
+    top: 10em;
+    font-size:x-large;
+
+}
+.Eco-mode{
+    cursor: pointer;
+    display: flex;
+    width: 15%;
     justify-content: space-evenly;
     flex-wrap: wrap;
     position: absolute;
     z-index:100; 
+    right: 54.4em;
+    top: 12em;
+    font-size:  x-large;
 }
 
 /*font style*/
@@ -17,7 +36,7 @@ h1 {
 }
 #slider-range{
     background-color: rgba(187,145,19,0.2);
-    background-image: none;
+    
 }
 .rs-control .rs-range-color {
     background-color: #54BBE0;
@@ -27,6 +46,8 @@ h1 {
 }
 .rs-control .rs-handle {
     background-color: #838383;
+
+    box-shadow: 0px 0px 4px 0px #000;
 }
 .rs-control .rs-bg-color {
     background-color: #f5f5f5;
@@ -34,6 +55,24 @@ h1 {
 .ui-slider {
  background: #f5f5f5;
 }
+#slider .rs-tooltip-text {
+    font-size: 25px;
+    
+  }
+  /* Button  */
+  #add,
+  #sub {
+    position: absolute;
+    top: 100%;
+    margin-top: -60px;
+  }
+  #add {
+    right: 65px;
+  }
+  #sub {
+    left: 65px;
+  }
+
 
 /* The sidebar menu */
 
@@ -112,3 +151,5 @@ a:link {
     background-color: transparent;
     text-decoration: underline;
   }
+
+  
