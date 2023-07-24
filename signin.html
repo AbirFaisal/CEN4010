@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <style>
+      .box-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .p1 {
+        font-family: monospace;
+      }
+
+      .button1 {
+        width: 150px;
+      }
+
+      hr {
+        width: 30%;
+        position: relative;
+      }
+
+      body {
+        background-color: #f0f7ee;
+        font-family: monospace;
+      }
+    </style>
+    <title>IOT Smart Thermostat</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--Welcome Container-->
+      <div class="pt-4 p-4 text-center">
+        <h1 class="p1">Welcome To<br />IOT Smart Thermostat</h1>
+      </div>
+      <!--Sign in container-->
+      <div class="box-area">
+        <div
+          class="col-md-8 p-5 shadow box-area rounded-4 box-area"
+          style="background-color: antiquewhite"
+        >
+          <form>
+            <label class="p1" for="email">Email</label><br />
+            <input type="text" size="50" id="email" name="email" /><br /><br />
+            <label class="p1" for="password">Password</label><br />
+            <input
+              type="text"
+              size="50"
+              id="password"
+              name="password"
+            /><br /><br />
+            <div class="row">
+              <div class="col">
+                <input
+                  type="checkbox"
+                  id="remember me"
+                  name="remember me"
+                  value="remember"
+                />
+                <label class="p1" for="remember me">Remember me</label>
+              </div>
+              <div class="col">
+                <a href="#" class="p1"> Forgot password?</a>
+              </div>
+            </div>
+            <div class="input-group box-area pt-4">
+              <button
+                onclick="login()"
+                class="p1 btn btn-lg btn-primary button1"
+              >
+                Login
+              </button>
+            </div>
+            <br />
+          </form>
+          <p>Or</p>
+          <button onclick="signup()">signup</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="config.js"></script>
+</html>
