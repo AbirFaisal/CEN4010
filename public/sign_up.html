@@ -49,6 +49,13 @@
           style="background-color: antiquewhite"
         >
           <form>
+            <label class="p1" for="full_name">Full Name</label><br />
+            <input
+              type="text"
+              size="50"
+              id="full_name"
+              name="full_name"
+            /><br /><br />
             <label class="p1" for="email">Email</label><br />
             <input type="text" size="50" id="email" name="email" /><br /><br />
             <label class="p1" for="password">Password</label><br />
@@ -74,10 +81,10 @@
             </div>
             <div class="input-group box-area pt-4">
               <button
-                onclick="login()"
+                onclick="signup()"
                 class="p1 btn btn-lg btn-primary button1"
               >
-                Login
+                Sign Up
               </button>
             </div>
             <br />
@@ -90,5 +97,6 @@
   </body>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
-  <script src="config.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="login_signup.js"></script>
 </html>

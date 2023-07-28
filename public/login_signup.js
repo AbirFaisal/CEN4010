@@ -13,7 +13,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const auth = firebase.auth();
-const db = firebase.firestore();
+const db = firebase.database();
 
 function login() {
     email = document.getElementById("email").value;
@@ -45,10 +45,10 @@ function signup() {
         email : email, full_name : full_name, last_login : Date.now()
     }
 
-    database_ref.child('user/' + user.uid).set(user_data)
+    db_ref.child('user/' + user.uid).set(user_data)
 
     alert('User Created!!!')
-    window.location.assign("log-in.html")
+    window.location.assign("index.html")
 })
 .catch(function(error) {
     //firebase will use this to alert if its an error
@@ -110,10 +110,10 @@ function login() {
         last_login : Date.now()
     }
 
-    database_ref.child('user/' + user.uid).update(user_data)
+    db_ref.child('user/' + user.uid).update(user_data)
 
     alert('User logged In')
-    window.location.assign("index.html")
+    window.location.assign("homepage.html")
     })
     .catch(function(error) {
         //firebase will use this to alert if its an error

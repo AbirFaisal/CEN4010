@@ -13,8 +13,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const auth = firebase.auth();
-const db = firebase.firestore();
-const email = document.getElementById(email)
 
 function login() {
     var email = document.getElementById("email").value;
