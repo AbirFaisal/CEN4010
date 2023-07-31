@@ -15,18 +15,10 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.database();
 
-function login() {
+function signup() {
+    full_name = document.getElementById("full_name").value;
     email = document.getElementById("email").value;
     password = document.getElementById("password").value;
-    auth.signInWithEmailAndPassword(email, password).then (cred => {
-        alert(cred.user.email + " has logged in")
-    })
-}
-
-function signup() {
-    full_name = document.getElementById("full name").value;
-    email = document.getElementById("email").value;
-    password = document.getElementById("Password").value;
     
     //validate input fields
     if(validate_email == false || validate_password == false) {
