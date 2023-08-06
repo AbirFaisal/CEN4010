@@ -13,3 +13,5 @@ Thumbs.db
 Firmware/.DS_Store
 Firmware/.DS_Store
 Firmware/.DS_Store
+*.cache
+.firebase/hosting.cHVibGlj.cache
